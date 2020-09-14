@@ -24,7 +24,7 @@ dog = {
 print(dog)
 
 # using f keyword for string interpolation
-my_message = f"{dog['name']} lives in {dog['location'].}"
+my_message = f"{dog['name']} lives in {dog['location']}."
 print(my_message)
 
 def add_numbers(num1, num2):
