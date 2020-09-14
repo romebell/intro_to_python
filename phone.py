@@ -40,3 +40,37 @@ print(martin_iphone.fingerprint)
 martin_iphone.unlock("password123")
 martin_iphone.call(8596990933)
 martin_iphone.open_app("Tik Tok")
+
+class Android(Phone):
+    def __init__(self, phone_number):
+        super().__init__(phone_number)
+        self.keyboard = "Default"
+    
+    def __str__(self):
+        return "This phone is owned by {}".format(self.number)
+
+    
+    def set_keyboard(self, new_keyboard):
+        self.keyboard = new_keyboard
+
+Android.ORIGIN = Android("")
+
+josh_phone = Android(5557130099)
+
+josh_phone.set_keyboard("Dvorak")
+josh_phone.call(8596990933)
+
+josh_phone.open_app("Google Play Store")
+
+print(josh_phone)
+
+# rome_android = Android(8596990933)
+
+# rome_android.set_fingerprint("password")
+# print(rome_android.fingerprint)
+
+# rome_android.call(911)
+
+# # make one class 
+# # make another class with no relation to the first class
+# # try passing in both to a class and see if you have access to methods and variables
