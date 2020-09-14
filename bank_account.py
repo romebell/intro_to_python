@@ -10,7 +10,6 @@ class BankAccount():
 
 
     def withdraw(self, amount, pin_from_user):
-
         if (self.pin == pin_from_user):
             if (self.balance < amount):
                 print("Sorry, you don't have that amount in your account.")
